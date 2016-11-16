@@ -1,0 +1,32 @@
+{
+  "name": "arnoldrecognizer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "node-cloud-vision-api": "^0.2.0",
+    "sentencer": "^0.1.5",
+    "telegraf": "^3.3.1"
+  },
+  "scripts": {
+    "build": "webpack",
+    "start": "node ./build/build.js"
+  },
+  "devDependencies": {
+    "babel-core": "^6.10.4",
+    "babel-eslint": "^6.1.2",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-async-to-generator": "^6.8.0",
+    "babel-plugin-transform-class-properties": "^6.6.0",
+    "babel-plugin-transform-decorators": "^6.6.5",
+    "babel-plugin-transform-object-rest-spread": "^6.6.5",
+    "babel-plugin-transform-runtime": "^6.7.5",
+    "babel-preset-node6": "^11.0.0",
+    "body-parser": "^1.15.2",
+    "eslint": "^3.10.2",
+    "eslint-loader": "^1.6.1",
+    "json-loader": "^0.5.4"
+  },
+  "author": "",
+  "license": "ISC"
+}

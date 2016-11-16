@@ -1,0 +1,4 @@
+module.exports = {
+    APIKEY_TELEGRAM : '<APIKEY_TELEGRAM>',
+    APIKEY_GOOGLE   : '<APIKEY_GOOGLE>'
+};
