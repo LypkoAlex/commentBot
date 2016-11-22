@@ -1,4 +1,4 @@
-import { getSentences } from './lib/utils';
+import Sentences from './lib/utils';
 
 import TelegramBot from './lib/bots/Telegram';
 import Recognizer  from './lib/Recognizer';
@@ -6,10 +6,11 @@ import Recognizer  from './lib/Recognizer';
 import { APIKEY_TELEGRAM, APIKEY_GOOGLE } from './etc/config';
 
 const recognizer = new Recognizer(APIKEY_GOOGLE);
+const sentences = new Sentences();
 
 async function onImageReciveHandler(imagePath, bot) {
     const res = await recognizer.recognize(imagePath);
-    getSentences(res).map( item => {
+    sentences.getSentences(res).map( item => {
         bot.sendResponse(item);
     });
 }
